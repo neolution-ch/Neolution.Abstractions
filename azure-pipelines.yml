@@ -22,20 +22,20 @@ steps:
   displayName: Restore
   inputs:
     command: restore
-    projects: '$(Parameters.RestoreBuildProjects)'
+    projects: '**/*.csproj'
     vstsFeed: 'dc68f94e-847b-4595-86ba-405d5744b21d'
 
 - task: DotNetCoreCLI@2
   displayName: Build
   inputs:
-    projects: '$(Parameters.RestoreBuildProjects)'
+    projects: '**/*.csproj'
     arguments: '--configuration $(BuildConfiguration)'
 
 - task: DotNetCoreCLI@2
   displayName: Test
   inputs:
     command: test
-    projects: '$(Parameters.TestProjects)'
+    projects: '**/*[Tt]ests/*.csproj'
     arguments: '--configuration $(BuildConfiguration)'
 
 - task: DotNetCoreCLI@2
