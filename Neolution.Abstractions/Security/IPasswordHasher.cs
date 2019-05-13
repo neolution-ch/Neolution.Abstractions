@@ -6,6 +6,11 @@
     public interface IPasswordHasher
     {
         /// <summary>
+        /// Gets or sets the work factor. Higher means more time is needed for hashing.
+        /// </summary>
+        int WorkFactor { get; set; }
+
+        /// <summary>
         /// Creates the hash from the specified plain text password.
         /// </summary>
         /// <param name="plainTextPassword">The plain text password.</param>
