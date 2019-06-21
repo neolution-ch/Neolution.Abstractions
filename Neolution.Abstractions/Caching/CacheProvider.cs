@@ -1,7 +1,6 @@
-﻿namespace Neolution.Abstractions.Cache
+﻿namespace Neolution.Abstractions.Caching
 {
     using System;
-    using System.Diagnostics.CodeAnalysis;
 
     /// <inheritdoc />
     /// <summary>
@@ -19,14 +18,12 @@
         private static string CacheName => typeof(TEnum).Name;
 
         /// <inheritdoc />
-        [SuppressMessage("Minor Code Smell", "S4018:Generic methods should provide type parameters", Justification = "Type parameter cannot be inferred at method call.")]
         public T GetObject<T>(TEnum container)
         {
             return this.GetObject<T>(container, null);
         }
 
         /// <inheritdoc />
-        [SuppressMessage("Minor Code Smell", "S4018:Generic methods should provide type parameters", Justification = "Type parameter cannot be inferred at method call.")]
         public T GetObject<T>(TEnum container, string key)
         {
             key = CreateCacheKey(container, key);

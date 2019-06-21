@@ -1,7 +1,6 @@
-﻿namespace Neolution.Abstractions.Cache
+﻿namespace Neolution.Abstractions.Caching
 {
     using System;
-    using System.Diagnostics.CodeAnalysis;
 
     /// <summary>
     /// Methods to help caching data of any type. Data is put in containers and may be identified by a string key. Data can be saved, retrieved and reset.
@@ -18,7 +17,6 @@
         /// <returns>
         /// The data from cache.
         /// </returns>
-        [SuppressMessage("Minor Code Smell", "S4018:Generic methods should provide type parameters", Justification = "Type parameter cannot be inferred at method call.")]
         T GetObject<T>(TEnum container);
 
         /// <summary>
@@ -30,7 +28,6 @@
         /// <returns>
         /// The data from cache.
         /// </returns>
-        [SuppressMessage("Minor Code Smell", "S4018:Generic methods should provide type parameters", Justification = "Type parameter cannot be inferred at method call.")]
         T GetObject<T>(TEnum container, string key);
 
         /// <summary>
