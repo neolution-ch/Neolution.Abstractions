@@ -5,7 +5,7 @@
     using Microsoft.Extensions.Configuration;
     using Microsoft.Extensions.DependencyInjection;
     using Neolution.Abstractions.Security;
-    using Neolution.DependencyResolution;
+    using Neolution.Extensions.DependencyInjection;
     using Shouldly;
     using Xunit;
 

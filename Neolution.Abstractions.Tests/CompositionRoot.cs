@@ -3,7 +3,7 @@
     using Microsoft.Extensions.DependencyInjection;
     using Neolution.Abstractions.Security;
     using Neolution.Abstractions.Tests.Implementations.Security;
-    using Neolution.DependencyResolution.Abstractions;
+    using Neolution.Extensions.DependencyInjection.Abstractions;
 
     /// <inheritdoc />
     public class CompositionRoot : BootstrappedCompositionRoot
