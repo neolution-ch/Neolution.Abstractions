@@ -5,7 +5,7 @@ VisualStudioVersion = 16.0.29009.5
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Neolution.Abstractions", "Neolution.Abstractions\Neolution.Abstractions.csproj", "{AD943466-336F-4313-AEB5-F7FB72678E07}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Neolution.Abstractions.Tests", "Neolution.Abstractions.Tests\Neolution.Abstractions.Tests.csproj", "{A4FB6435-7306-4CDB-9EC3-30B70FFAF2E7}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Neolution.Abstractions.UnitTests", "Neolution.Abstractions.UnitTests\Neolution.Abstractions.UnitTests.csproj", "{C7C670F4-71EE-4CCF-BB93-1FD09B7C8F03}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -17,10 +17,10 @@ Global
 		{AD943466-336F-4313-AEB5-F7FB72678E07}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{AD943466-336F-4313-AEB5-F7FB72678E07}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{AD943466-336F-4313-AEB5-F7FB72678E07}.Release|Any CPU.Build.0 = Release|Any CPU
-		{A4FB6435-7306-4CDB-9EC3-30B70FFAF2E7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{A4FB6435-7306-4CDB-9EC3-30B70FFAF2E7}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{A4FB6435-7306-4CDB-9EC3-30B70FFAF2E7}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{A4FB6435-7306-4CDB-9EC3-30B70FFAF2E7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C7C670F4-71EE-4CCF-BB93-1FD09B7C8F03}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C7C670F4-71EE-4CCF-BB93-1FD09B7C8F03}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C7C670F4-71EE-4CCF-BB93-1FD09B7C8F03}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C7C670F4-71EE-4CCF-BB93-1FD09B7C8F03}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

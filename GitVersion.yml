@@ -2,8 +2,6 @@ mode: Mainline
 branches:
   release:
     mode: ContinuousDeployment
-  feature:
-    mode: ContinuousDeployment
 ignore:
   sha: []
 merge-message-formats: {}
