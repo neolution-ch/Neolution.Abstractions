@@ -60,8 +60,10 @@ steps:
   displayName: Pack
   inputs:
     command: pack
+    packagesToPack: '**/Neolution.Abstractions.csproj'
     nobuild: true
-    versioningScheme: byBuildNumber
+    versioningScheme: byEnvVar
+    versionEnvVar: NuGetVersion
 
 - task: DotNetCoreCLI@2
   displayName: 'dotnet push'
