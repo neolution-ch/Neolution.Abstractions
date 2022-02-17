@@ -8,11 +8,4 @@
     <Description>Common abstractions for Neolution projects</Description>
   </PropertyGroup>
 
-  <ItemGroup>
-    <PackageReference Include="Neolution.CodeAnalysis" Version="2.3.1">
-      <PrivateAssets>all</PrivateAssets>
-      <IncludeAssets>runtime; build; native; contentfiles; analyzers</IncludeAssets>
-    </PackageReference>
-  </ItemGroup>
-
 </Project>
