@@ -6,6 +6,8 @@
     <Authors>Neolution AG</Authors>
     <Product>Neolution Abstractions</Product>
     <Description>Common abstractions for Neolution projects</Description>
+    <PackageProjectUrl>https://github.com/neolution-ch/Neolution.Abstractions</PackageProjectUrl>
+    <PackageLicenseExpression>MIT</PackageLicenseExpression>
   </PropertyGroup>
 
 </Project>
