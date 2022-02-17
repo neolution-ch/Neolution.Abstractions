@@ -19,12 +19,6 @@ jobs:
       # Checkout the repo
       - uses: actions/checkout@v2
 
-      - name: 'change version'
-        uses: polygon-software/npm-version-date@master
-        with:
-          schema: 'yyyy.MM.P'
-          increase-patch: true
-
       # Setup .NET Core SDK
       - name: Setup .NET Core
         uses: actions/setup-dotnet@v1
