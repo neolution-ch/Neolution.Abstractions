@@ -1,4 +1,4 @@
-namespace Neolution.Abstractions.Caching
+﻿namespace Neolution.Abstractions.Caching
 {
     using System;
 
@@ -20,12 +20,14 @@ namespace Neolution.Abstractions.Caching
         private static string CacheName => typeof(TEnum).Name;
 
         /// <inheritdoc />
+        [Obsolete("Please use either IMemoryCache or IDistributedCache")]
         public T GetObject<T>(TEnum container)
         {
             return this.GetObject<T>(container, null);
         }
 
         /// <inheritdoc />
+        [Obsolete("Please use either IMemoryCache or IDistributedCache")]
         public T GetObject<T>(TEnum container, string key)
         {
             key = CreateCacheKey(container, key);
@@ -33,12 +35,14 @@ namespace Neolution.Abstractions.Caching
         }
 
         /// <inheritdoc />
+        [Obsolete("Please use either IMemoryCache or IDistributedCache")]
         public void SetObject(TEnum container, object cacheObject)
         {
             this.SetObject(container, null, cacheObject);
         }
 
         /// <inheritdoc />
+        [Obsolete("Please use either IMemoryCache or IDistributedCache")]
         public void SetObject(TEnum container, string key, object cacheObject)
         {
             key = CreateCacheKey(container, key);
@@ -46,12 +50,14 @@ namespace Neolution.Abstractions.Caching
         }
 
         /// <inheritdoc />
+        [Obsolete("Please use either IMemoryCache or IDistributedCache")]
         public void SetObject(TEnum container, object cacheObject, DateTime expiration)
         {
             this.SetObject(container, null, cacheObject, expiration);
         }
 
         /// <inheritdoc />
+        [Obsolete("Please use either IMemoryCache or IDistributedCache")]
         public void SetObject(TEnum container, string key, object cacheObject, DateTime expiration)
         {
             key = CreateCacheKey(container, key);
@@ -59,12 +65,14 @@ namespace Neolution.Abstractions.Caching
         }
 
         /// <inheritdoc />
+        [Obsolete("Please use either IMemoryCache or IDistributedCache")]
         public void Reset(TEnum container)
         {
             this.Reset(container, null);
         }
 
         /// <inheritdoc />
+        [Obsolete("Please use either IMemoryCache or IDistributedCache")]
         public void Reset(TEnum container, string key)
         {
             key = CreateCacheKey(container, key);
@@ -76,6 +84,7 @@ namespace Neolution.Abstractions.Caching
         /// </summary>
         /// <param name="key">The key.</param>
         /// <returns>The object from the cache</returns>
+        [Obsolete("Please use either IMemoryCache or IDistributedCache")]
         protected abstract object GetCacheObject(string key);
 
         /// <summary>
@@ -83,6 +92,7 @@ namespace Neolution.Abstractions.Caching
         /// </summary>
         /// <param name="key">The key.</param>
         /// <param name="value">The value.</param>
+        [Obsolete("Please use either IMemoryCache or IDistributedCache")]
         protected abstract void SetCacheObject(string key, object value);
 
         /// <summary>
@@ -91,12 +101,14 @@ namespace Neolution.Abstractions.Caching
         /// <param name="key">The key.</param>
         /// <param name="value">The value.</param>
         /// <param name="expiration">The expiration.</param>
+        [Obsolete("Please use either IMemoryCache or IDistributedCache")]
         protected abstract void SetCacheObject(string key, object value, DateTime expiration);
 
         /// <summary>
         /// Resets the object in the cache.
         /// </summary>
         /// <param name="key">The key.</param>
+        [Obsolete("Please use either IMemoryCache or IDistributedCache")]
         protected abstract void ResetCacheObject(string key);
 
         /// <summary>

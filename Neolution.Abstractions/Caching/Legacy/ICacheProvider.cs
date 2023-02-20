@@ -18,6 +18,7 @@
         /// <returns>
         /// The data from cache.
         /// </returns>
+        [Obsolete("Please use either IMemoryCache or IDistributedCache")]
         T GetObject<T>(TEnum container);
 
         /// <summary>
@@ -29,6 +30,7 @@
         /// <returns>
         /// The data from cache.
         /// </returns>
+        [Obsolete("Please use either IMemoryCache or IDistributedCache")]
         T GetObject<T>(TEnum container, string key);
 
         /// <summary>
@@ -36,6 +38,7 @@
         /// </summary>
         /// <param name="container">The container.</param>
         /// <param name="cacheObject">The cache object.</param>
+        [Obsolete("Please use either IMemoryCache or IDistributedCache")]
         void SetObject(TEnum container, object cacheObject);
 
         /// <summary>
@@ -44,6 +47,7 @@
         /// <param name="container">The container.</param>
         /// <param name="key">The key.</param>
         /// <param name="cacheObject">The cache object.</param>
+        [Obsolete("Please use either IMemoryCache or IDistributedCache")]
         void SetObject(TEnum container, string key, object cacheObject);
 
         /// <summary>
@@ -52,6 +56,7 @@
         /// <param name="container">The container.</param>
         /// <param name="cacheObject">The cache object.</param>
         /// <param name="expiration">The expiration.</param>
+        [Obsolete("Please use either IMemoryCache or IDistributedCache")]
         void SetObject(TEnum container, object cacheObject, DateTime expiration);
 
         /// <summary>
@@ -61,12 +66,14 @@
         /// <param name="key">The key.</param>
         /// <param name="cacheObject">The cache object.</param>
         /// <param name="expiration">The expiration.</param>
+        [Obsolete("Please use either IMemoryCache or IDistributedCache")]
         void SetObject(TEnum container, string key, object cacheObject, DateTime expiration);
 
         /// <summary>
         /// Resets cached data of the specified container.
         /// </summary>
         /// <param name="container">The container.</param>
+        [Obsolete("Please use either IMemoryCache or IDistributedCache")]
         void Reset(TEnum container);
 
         /// <summary>
@@ -74,6 +81,7 @@
         /// </summary>
         /// <param name="container">The container.</param>
         /// <param name="key">The key.</param>
+        [Obsolete("Please use either IMemoryCache or IDistributedCache")]
         void Reset(TEnum container, string key);
     }
 }
