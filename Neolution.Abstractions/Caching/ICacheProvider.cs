@@ -3,9 +3,10 @@
     using System;
 
     /// <summary>
-    /// Methods to help caching data of any type. Data is put in containers and may be identified by a string key. Data can be saved, retrieved and reset.
+    /// LEGACY Methods to help caching data of any type. Data is put in containers and may be identified by a string key. Data can be saved, retrieved and reset.
     /// </summary>
     /// <typeparam name="TEnum">The type of the enum.</typeparam>
+    [Obsolete("Please use either IMemoryCache or IDistributedCache")]
     public interface ICacheProvider<in TEnum>
         where TEnum : struct, Enum
     {

@@ -1,11 +1,13 @@
-﻿namespace Neolution.Abstractions.Caching
+namespace Neolution.Abstractions.Caching
 {
     using System;
 
     /// <inheritdoc />
     /// <summary>
-    /// Abstract base class for cache providers
+    /// LEGACY Abstract base class for cache providers
     /// </summary>
+
+    [Obsolete("Please use either MemoryCache or DistributedCache")]
     public abstract class CacheProvider<TEnum> : ICacheProvider<TEnum>
         where TEnum : struct, Enum
     {
